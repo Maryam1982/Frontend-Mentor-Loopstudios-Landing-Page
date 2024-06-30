@@ -1,0 +1,26 @@
+@use "../utils/" as utils;
+
+.btn {
+  padding: 1.5rem 3rem;
+  background-color: utils.$black-color;
+  color: utils.$white-color;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-family: utils.$body-font;
+  font-weight: 300;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--outline {
+  background: none;
+  border: 2px solid utils.$black-color;
+  color: utils.$black-color;
+  padding: 1.5rem 4rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+}

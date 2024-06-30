@@ -1,0 +1,40 @@
+$white-color: hsl(0, 0%, 100%);
+$black-color: hsl(0, 0%, 0%);
+$dark-gray-color: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+
+//TYPOGRAPHY
+$body-font: "Alata", sans-serif;
+$title-font: "Josefin Sans", sans-serif;
+$default-font-size: 1.5rem;
+
+//PADDING
+$padding: 6rem 10rem;
+
+//MARGIN
+$margin: 10rem;
+$title-margin: 4rem;
+
+:root {
+  --global-margin: 10rem;
+  --global-padding: 6rem 10rem;
+  --global-title-margin: 4rem;
+  --section-title: 5rem;
+
+  @media screen and (max-width: 1180px) {
+    --global-margin: 7rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    --section-title: 4rem;
+  }
+
+  @media screen and (max-width: 980px) {
+    --global-title-margin: 2rem;
+  }
+
+  @media screen and (max-width: 640px) {
+    --section-title: 3rem;
+    --global-margin: 4rem;
+  }
+}

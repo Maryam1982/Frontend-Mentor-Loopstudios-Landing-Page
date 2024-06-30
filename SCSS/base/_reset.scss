@@ -1,0 +1,21 @@
+@use "../utils";
+@use "sass:meta";
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: utils.$body-font;
+  font-size: utils.$default-font-size;
+  color: utils.$very-dark-gray;
+}
