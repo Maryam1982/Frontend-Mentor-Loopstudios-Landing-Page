@@ -7,7 +7,7 @@ header {
   align-items: center;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/desktop/image-hero.jpg");
+    url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6rem var(--global-margin);
@@ -20,7 +20,7 @@ header {
 
   @media screen and (max-width: 720px) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../images/mobile/image-hero.jpg");
+      url("../images/mobile/image-hero.jpg");
   }
 }
 
@@ -97,10 +97,6 @@ header {
     position: absolute;
     border: none;
   }
-
-  // &__slide-nav:hover &__menu-line {
-  //   visibility: hidden;
-  // }
 
   &__slide-nav--rotate &__menu-line {
     visibility: hidden;

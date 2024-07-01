@@ -5,8 +5,7 @@ const section_1_img_paceholder = document.querySelector(".section-1__img img");
 const section_2_img_placeholders = document.querySelectorAll(
   ".section-2__placeholder-img"
 );
-
-console.log(section_2_img_placeholders);
+const outline_button = document.querySelector(".btn.btn--outline");
 
 function setNavVisibility() {
   const clientWidth = document.documentElement.clientWidth;
@@ -16,12 +15,16 @@ function setNavVisibility() {
     if (expanded_nav.classList.contains("header__expanded-nav--hide"))
       expanded_nav.classList.remove("header__expanded-nav--hide");
     section_1_img_paceholder.src = "./images/desktop/image-interactive.jpg";
+    if (!outline_button.classList.contains("btn--outline-hide"))
+      outline_button.classList.add("btn--outline-hide");
   } else {
     if (collapsed_nav.classList.contains("header__slide-nav--hide"))
       collapsed_nav.classList.remove("header__slide-nav--hide");
     if (!expanded_nav.classList.contains("header__expanded-nav--hide"))
       expanded_nav.classList.add("header__expanded-nav--hide");
     section_1_img_paceholder.src = "./images/mobile/image-interactive.jpg";
+    if (outline_button.classList.contains("btn--outline-hide"))
+      outline_button.classList.remove("btn--outline-hide");
   }
 }
 
